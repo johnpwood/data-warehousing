@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS CUSTOMER;
+DROP TABLE IF EXISTS EMPLOYEE;
+DROP TABLE IF EXISTS LOCATION;
+DROP TABLE IF EXISTS FACILITY;
+
+source create_customer.sql
+source create_facility.sql
+source create_location.sql
+source create_employee.sql
