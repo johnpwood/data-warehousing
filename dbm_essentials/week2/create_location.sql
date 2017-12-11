@@ -1,9 +1,10 @@
 DROP TABLE IF EXISTS LOCATION;
 
 CREATE TABLE LOCATION (
-       locno CHAR(10) NOT NULL,
-       facno CHAR(10) NOT NULL,
+       locno CHAR(6) NOT NULL,
+       facno CHAR(6) NOT NULL,
        locname TEXT NOT NULL,
+       CONSTRAINT PK_locno PRIMARY KEY (locno),
        CONSTRAINT FK_facno_location FOREIGN KEY (facno) REFERENCES FACILITY(facno) );
 
 Insert into LOCATION (LOCNO,FACNO,LOCNAME) values ('L100','F100','Locker room');

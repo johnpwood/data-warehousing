@@ -1,9 +1,17 @@
+DROP TABLE IF EXISTS EVENTPLANLINE;
+DROP TABLE IF EXISTS EVENTPLAN;
+DROP TABLE IF EXISTS EVENTREQUEST;
 DROP TABLE IF EXISTS CUSTOMER;
 DROP TABLE IF EXISTS EMPLOYEE;
 DROP TABLE IF EXISTS LOCATION;
 DROP TABLE IF EXISTS FACILITY;
+DROP TABLE IF EXISTS RESOURCETBL;
 
 source create_customer.sql
 source create_facility.sql
 source create_location.sql
 source create_employee.sql
+source create_resourcetbl.sql
+source create_eventrequest.sql
+source create_eventplan.sql
+source create_eventplanline.sql
