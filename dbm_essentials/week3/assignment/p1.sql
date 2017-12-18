@@ -1,0 +1,6 @@
+SELECT eventno, dateheld, EVENTREQUEST.custno, custname, FACILITY.facno, facname
+FROM EVENTREQUEST, CUSTOMER, FACILITY
+WHERE EVENTREQUEST.custno = CUSTOMER.custno
+AND EVENTREQUEST.facno = FACILITY.facno
+AND dateheld LIKE '2013%'
+AND CUSTOMER.state = 'CO';
