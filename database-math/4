@@ -1,0 +1,61 @@
+John, here's the definition of the generalized product that
+you'll probably want if you're coming back here:
+The generalized product is taken of a set-valued function, F.
+it is the set of functions, call each function f, such that
+the domain of f is the domain of F and for all c f(c) is an
+element of F(c).
+
+
+1. How many distinct binary relations can be constructed from a
+given set A with cardinality 3 to a given set B with cardinality 4?
+
+The number of distinct pairs of elements is 12.  A binary relation
+is any collection of these pairs, so the number of distinct collections
+is 12! or 479,001,600.
+
+
+2. How many distinct functions can be constructed from a given set A
+with cardinality 3 to a given set B with cardinality 4?
+
+The distinct domains of all these functions are the distinct collections
+of elements of A.  Their number will be 2^3 - 1 or 7.  These should
+be devided up by size:
+three domains of size 1, three of size 2, one of size 3.
+the numer of possible assignments of values to a function from
+A to be will be 4 for each element of the domain, leading to this number
+of possibilities:
+domain size 1: 4
+domain size 2: 4x4 = 16
+domain size 3: 4x4x4 = 64
+total number of possibilities: 84
+
+3. 4. 5. 6.
+
+trivial
+
+7. Give the result sets for the following expressions
+
+a. generalized product of { (a;{1}), (b;{1,2}) }
+
+{ {(a; 1), (b; 1)}, {(a; 1), (b; 2)} }
+
+b. generalized product of:
+{ (a;{1, 2, 3, 4}), (b; {5, 6, 7, 8}), (d;null), (e; {9,10}) }
+
+null
+
+c. The set of all t such that t is a member of the generalized
+product of { (a; {1, 2, 3, 4}), (b; {5, 6, 7, 8}) } and
+t(a) + t(b) < 8
+
+{
+  {(a; 1), (b; 5)}, {(a; 2), (b; 5)},
+  {(a; 2), (b; 5)}
+}
+
+d. The set of all f such that f is in the generalized product of
+{ (X; {1, 2}), (Y; {1, 2, 3}) } and cardinality of the range of f
+is 1.
+
+{ {(X; 1), (Y; 1)}, {(X; 2), (Y; 2)} }
+
